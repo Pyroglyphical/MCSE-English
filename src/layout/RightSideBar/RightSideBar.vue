@@ -13,7 +13,7 @@ const { activeThemeName } = useTheme()
         <v-navigation-drawer floating permanent location="right" class="right-side-bar" :theme="activeThemeName"
             select-none>
             <div class="modelShow">
-                <v-list-item font-size-3 px-2>模型显示</v-list-item>
+                <v-list-item font-size-3 px-2>Model</v-list-item>
                 <v-list-item>
                     <div class="selector bodyparts" pb-4>
                         <div class="bodyparts-body">
@@ -92,7 +92,7 @@ const { activeThemeName } = useTheme()
             <v-divider mx-2></v-divider>
 
             <div class="colorPicker">
-                <v-list-item px-2 font-size-3>颜色选择</v-list-item>
+                <v-list-item px-2 font-size-3>Color</v-list-item>
                 <v-list-item>
                     <div class="color-controls" my-4>
                         <ColorPicker></ColorPicker>
@@ -103,7 +103,7 @@ const { activeThemeName } = useTheme()
             <v-divider mx-2></v-divider>
 
             <div class="modelSelect">
-                <v-list-item px-2 font-size-3>人物模型</v-list-item>
+                <v-list-item px-2 font-size-3>Size</v-list-item>
                 <v-list-item p-4>
                     <v-select class="" :items="editorStore.modelItems" variant="outlined" v-model="editorStore.model"
                         :disabled="editorStore.modelSelect" @update:modelValue="editorStore.modelChange"></v-select>
@@ -113,7 +113,7 @@ const { activeThemeName } = useTheme()
             <v-divider mx-2></v-divider>
 
             <div class="poselSelect">
-                <v-list-item px-2 font-size-3>人物姿势</v-list-item>
+                <v-list-item px-2 font-size-3>Pose</v-list-item>
                 <v-list-item p-4>
                     <v-select class="" :items="editorStore.poseItems" variant="outlined"
                         v-model="editorStore.pose"></v-select>
@@ -123,7 +123,7 @@ const { activeThemeName } = useTheme()
             <v-divider mx-2></v-divider>
 
             <div class="gridSwitch">
-                <v-list-item px-2 font-size-3>模型网格</v-list-item>
+                <v-list-item px-2 font-size-3>Grid</v-list-item>
                 <v-list-item p-4>
                     <v-switch v-model="editorStore.switchGrid" :color="editorStore.color">
                     </v-switch>
